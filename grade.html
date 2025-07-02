@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style> 
+        #input-1{ 
+            padding:15px;
+            border:2px solid grey;
+            width:300px;
+        }
+        #text{ 
+           font-size: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="input-1" oninput="Input()" placeholder="enter your score">
+  <p id="text"> 
+      Your Grade
+  </p>
+  <script> 
+      function Input(){ 
+       let grade
+        =parseFloat(document.getElementById("input-1").value);
+        
+        if (isNaN(grade)) {
+  document.getElementById("text").innerText = "Please enter a valid score";
+  document.getElementById("text").style.color = "#ff2bdc";
+  return;
+}
+        
+        let color;
+        let message;
+      if (grade>=90){
+      grade="A";
+      color="#70ff40";
+      message="Excellent";
+      }else if(grade>=80){
+      grade="B";
+        color="#80d6ff";
+      message="Very good";
+      }else if(grade>=70){
+      grade="C";
+        color="#1cff15";
+      message="Good";
+      }else if(grade>=60){
+      grade="D";
+        color="#ffb22b";
+      message="Average";
+      }else{
+      grade="E";
+        color="#ff3400";
+      message="Fail";
+      }
+       document.getElementById("text").innerText="your grade:" + grade + "-" + message;
+   
+   document.getElementById("text").style.color=color; 
+       }
+  </script>
+</body>
+</html>
