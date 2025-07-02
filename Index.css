@@ -1,0 +1,36 @@
+body {
+  background-color:#333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Text */
+ h2, h3, p {
+  color: #fff;
+  
+}
+.port-p{ 
+    font-size:1.5rem;
+    color:#00ffe7;
+    text-shadow:0 0 10px #00ffe7;
+}
+
+/* General anchor styling */
+a {
+  display: inline-blo
+  color: #00ffe7; /* Light aqua for visibility */
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+/* On hover */
+a:hover {
+  background: rgba(0, 255, 231, 0.1); /* Soft glow background */
+  color: #22d3ee; /* Brighter aqua */
+  text-shadow: 0 0 8px #22d3ee;
+}
