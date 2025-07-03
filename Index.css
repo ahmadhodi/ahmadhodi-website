@@ -23,7 +23,7 @@ a {
   background: transparent;
 }
 a:hover {
-  background: rgba(0, 255, 231, 0.1); /* Soft glow background */
-  color: #22d3ee; /* Brighter aqua */
+  background: rgba(0, 255, 231, 0.1); 
+  color: #22d3ee; 
   text-shadow: 0 0 8px #22d3ee;
 }
